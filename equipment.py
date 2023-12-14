@@ -10,7 +10,7 @@ def manage_equipment():
 
     session.commit()
 
-    
+    session.close()
 
 
     
