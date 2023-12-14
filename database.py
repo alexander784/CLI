@@ -20,7 +20,7 @@ class hiker(Base):
     trips = relationship("Trip", secondary=hiker_trip_association)
 
 
-class Equpment(Base):
+class Equipment(Base):
     __tablename__ = 'equipment'
     id = Column(Integer, primary_key=True)
     name = Column(String)
@@ -31,6 +31,11 @@ class Trip(Base):
     id = Column(Integer, primary_key=True)
     name = Column(String)
     trips = relationship("Trip", secondary=hiker_trip_association)
+
+def __init__(self, name, destination):
+        self.name = name
+        self.destination = destination
+
 
 engine = create_engine("sqlite:///hikers_management.db", echo = True)
 Base.metadata.create_all(bind=engine)
