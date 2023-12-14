@@ -31,5 +31,9 @@ class Trip(Base):
     id = Column(Integer, primary_key=True)
     name = Column(String)
     trips = relationship("Trip", secondary=hiker_trip_association)
-    
+
+engine = create_engine("sqlite:///hikers_management.db", echo = True)
+Base.metadata.create_all(bind=engine)
+
+
     
