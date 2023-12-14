@@ -9,8 +9,12 @@ def manage_equipment():
     session.add(new_equipment)
 
     session.commit()
-
     session.close()
+
+    
+
+    manage_equipment()
+
 
 
     

@@ -12,3 +12,6 @@ def plan_trip():
     session.commit()
     session.close()
 
+
+
+plan_trip()
