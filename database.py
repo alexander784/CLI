@@ -37,5 +37,6 @@ Base.metadata.create_all(bind=engine)
 
 Session = sessionmaker(bind=engine)
 
-
+def initialize_database():
+    Base.metadata.create_all(bind=engine)
     
