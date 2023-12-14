@@ -35,5 +35,7 @@ class Trip(Base):
 engine = create_engine("sqlite:///hikers_management.db", echo = True)
 Base.metadata.create_all(bind=engine)
 
+Session = sessionmaker(bind=engine)
+
 
     
