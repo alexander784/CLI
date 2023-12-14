@@ -30,4 +30,6 @@ class Trip(Base):
     __tablename__ = 'trip'
     id = Column(Integer, primary_key=True)
     name = Column(String)
+    trips = relationship("Trip", secondary=hiker_trip_association)
+    
     
