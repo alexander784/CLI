@@ -18,10 +18,9 @@ Create and manage hiker profiles, including names, contact information, and emer
 
 Record and manage the inventory of hiking equipment. <br>
     Trip Planning:
-
 Plan and organize new hiking trips and assign hikers.<br>
-     Database Integration:
 
+     Database Integration:
 Hikers Management leverages SQLAlchemy to store and organize data efficiently in an SQLite database.
 Ensure data integrity and easy retrieval for future analysis and reporting.
 
