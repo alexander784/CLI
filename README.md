@@ -13,14 +13,14 @@
    ## Key Features:
    Hiker Profiles:
 
-Create and manage hiker profiles, including names, contact information, and emergency contacts.
-Equipment Tracking:
+Create and manage hiker profiles, including names, contact information, and emergency contacts. <br>
+   Equipment Tracking:
 
-Record and manage the inventory of hiking equipment.
-Trip Planning:
+Record and manage the inventory of hiking equipment. <br>
+    Trip Planning:
 
-Plan and organize new hiking trips and assign hikers.
-Database Integration:
+Plan and organize new hiking trips and assign hikers.<br>
+     Database Integration:
 
 Hikers Management leverages SQLAlchemy to store and organize data efficiently in an SQLite database.
 Ensure data integrity and easy retrieval for future analysis and reporting.
@@ -29,20 +29,24 @@ Ensure data integrity and easy retrieval for future analysis and reporting.
 
 ## Installation
 
-Clone the repo: git clone https://github.com/alexander784/CLI
+Clone the repo: git clone https://github.com/alexander784/CLI <br>
 Navigate to the project directory cd CLI
-Install dependecies: Pip install - Install the dependecies.
+Install dependecies:<br> Pip install - Install the dependecies.<br>
 pipenv shell - get into the virtiual environmet
 
 ## Usage:
 Run the project:
-     Python3 main.py 
-      or the pyhton version you using.
+     Python3 main.py <br>
+      or the python version you using.
 
 Follow the on-screen prompts to create hiker profiles, manage equipment, and plan hiking trip
 
 ## license
-This project is licensed under MIT lICENSE~
+This project is licensed under MIT license.
+
+
+## Author:
+ Alexander Nyaga
 
 
 
