@@ -18,3 +18,12 @@ class hiker(Base):
     emergency_contact = Column(String)
     preferences = Column(String)
     trips = relationship("Trip", secondary=hiker_trip_association)
+
+
+class Equpment(Base):
+    __tablename__ = 'equipment'
+    id = Column(Integer, primary_key=True)
+    name = Column(String)
+    condition = Column(String)
+
+    
