@@ -17,3 +17,4 @@ class hiker(Base):
     contact_info = Column(String)
     emergency_contact = Column(String)
     preferences = Column(String)
+    trips = relationship("Trip", secondary=hiker_trip_association)
