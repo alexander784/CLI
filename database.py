@@ -26,4 +26,8 @@ class Equpment(Base):
     name = Column(String)
     condition = Column(String)
 
+class Trip(Base):
+    __tablename__ = 'trip'
+    id = Column(Integer, primary_key=True)
+    name = Column(String)
     
