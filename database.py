@@ -12,7 +12,8 @@ hiker_trip_association = Table(
 )
 class hiker(Base):
     __tablename__ = 'hiker'
-    id = Column(Integer, primary_key=True)
+    id = Column(Integer, 
+                primary_key=True)
     name = Column(String)
     contact_info = Column(String)
     emergency_contact = Column(String)

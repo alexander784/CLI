@@ -1,7 +1,6 @@
 from database import Session, Trip, hiker
 
 def plan_trip():
-
     session = Session()
 
     #Create new trip
@@ -13,5 +12,3 @@ def plan_trip():
     session.close()
 
 
-
-plan_trip()

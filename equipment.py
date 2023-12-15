@@ -1,11 +1,10 @@
-from database import Session, equipment
+from database import Session,Equipment
 
 def manage_equipment():
-
     session = Session()
 
-    new_equipment = equipment(name="Hiking Boots", condition="Good")
-
+      ##Add new equipment
+    new_equipment = Equipment(name="Hiking Boots", condition="Good")
     session.add(new_equipment)
 
     session.commit()
@@ -13,7 +12,6 @@ def manage_equipment():
 
     
 
-    manage_equipment()
 
 
 

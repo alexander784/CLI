@@ -19,6 +19,9 @@ def plan_trip_cmd():
 def manage_equipment_cmd():
     manage_equipment()
 
+    if __name__ == "__main__":
+        main()
+
     
 
 

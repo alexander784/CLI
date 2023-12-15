@@ -19,6 +19,5 @@ def create_hiker_profile():
     )
 
     session.add(new_hiker)
-
     session.commit()
 
