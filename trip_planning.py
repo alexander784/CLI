@@ -1,14 +1,15 @@
 from database import Session, Trip, hiker
 
-def plan_trip():
+def plan_trip(trip_name, hikers):
     session = Session()
 
     #Create new trip
-    new_trip = Trip(name="  Roadtrip", destination="Mt Kenya", date="2023-12-31")
+    new_trip = Trip(trip_name= trip_name)
     session.add(new_trip)
+    
+# for hiker_id in hikers:
+#     hiker = session.query(Hiker).get(hiker_id)
+#     new_trip.hikers.append(hiker)
 
-
-    session.commit()
-    session.close()
-
-
+#     session.commit()
+#     print(f"Trip {trip_name} planned successfully.")
